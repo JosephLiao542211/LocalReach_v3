@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Neue Reman Sans";
+  src: url("/src/assets/fonts/NeueRemanSans/NeueRemanSans-Regular.ttf")
+    format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+.title-font {
+  @apply font-semibold text-white; /* Tailwind classes */
+  -webkit-text-stroke-width: 0px;
+  -webkit-text-stroke-color: #fff;
+  font-family: "Neue Reman Sans", sans-serif;
+  font-size: 148px;
+  font-style: normal;
+  line-height: 148px; /* 117.647% */
+  letter-spacing: 8px;
+}
+.subheading {
+  @apply font-medium text-white; /* Tailwind classes */
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal; /* If you want to specify the line height, you can set it explicitly */
+}
+
+.subheading-nocolor {
+  @apply font-medium; /* Tailwind classes */
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal; /* If you want to specify the line height, you can set it explicitly */
+}
+
+.subheading-black {
+  @apply font-medium text-black; /* Tailwind classes */
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal; /* If you want to specify the line height, you can set it explicitly */
+}
