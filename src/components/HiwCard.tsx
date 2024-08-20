@@ -1,4 +1,3 @@
-import "./styles.css";
 import { motion } from "framer-motion";
 
 import { useInView } from "framer-motion";

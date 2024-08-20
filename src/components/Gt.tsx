@@ -1,4 +1,3 @@
-import "./styles.css";
 import { motion, useScroll } from "framer-motion";
 
 import { useEffect, useRef, useState } from "react";

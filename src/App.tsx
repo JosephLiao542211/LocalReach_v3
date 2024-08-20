@@ -11,7 +11,7 @@ import Tabs from "./components/Tabs";
 import Howitworks from "./components/HowItWorks";
 function Tab1() {
   return (
-    <div className="mx-[10%] flex h-96 flex-col space-y-4 text-left lg:flex-row lg:space-x-4 lg:space-y-0">
+    <div className="mx-[10%]  flex h-full flex-col space-y-4 text-left lg:flex-row lg:space-x-4 lg:space-y-0">
       {/* Left Column */}
       <div className=" flex-1 rounded-lg bg-gray-100 p-6 shadow-md">
         <h2 className="mb-4 text-2xl font-bold">Heading for Tab 1</h2>
@@ -44,7 +44,7 @@ function Tab1() {
 
 function Tab2() {
   return (
-    <div className="mx-[10%] flex h-96 flex-col space-y-4 text-left lg:flex-row lg:space-x-4 lg:space-y-0">
+    <div className="mx-[10%] flex  h-full flex-col space-y-4 text-left lg:flex-row lg:space-x-4 lg:space-y-0">
       {/* Left Column */}
       <div className=" flex-1 rounded-lg bg-gray-100 p-6 shadow-md">
         <h2 className="mb-4 text-2xl font-bold">Heading for Tab 1</h2>

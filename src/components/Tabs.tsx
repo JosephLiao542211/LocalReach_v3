@@ -27,7 +27,8 @@ const Tabs: React.FC<TabProps> = ({ tabs }) => {
       </div>
 
       {/* Tab Content */}
-      <div className="p-4">{tabs[activeTab].content}</div>
+      <div className="h-[560px] p-0 py-[5%]">{tabs[activeTab].content}</div>
+      <div className="mx-0 h-[10px] w-full bg-orange-400 px-0"></div>
     </div>
   );
 };
