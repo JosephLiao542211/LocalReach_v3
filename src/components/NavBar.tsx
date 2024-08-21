@@ -3,9 +3,9 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="fixed left-0 top-10 z-50 w-full">
-      <div className="container relative mx-auto flex items-center justify-between">
-        <div className="flex flex-shrink scale-150 pl-12 ">
+    <nav className="fixed left-0 top-10 z-50  w-full">
+      <div className="container relative  flex items-center justify-between">
+        <div className="ml-[10%] flex flex-shrink scale-150 pl-12 ">
           <img src="logo.png" alt="Logo" className="h-8" />
         </div>
 
@@ -26,7 +26,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <button className="h-14 flex-shrink-0 bg-orange-600 px-16 hover:bg-[#864646]">
+        <button className="mr-[10%] h-14 flex-shrink-0 bg-orange-600  px-16 hover:bg-[#864646]">
           <div className="subheading"> Getting Started </div>
         </button>
       </div>

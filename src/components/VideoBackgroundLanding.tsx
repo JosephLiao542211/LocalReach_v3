@@ -4,7 +4,7 @@ import { Landing } from "./Landing";
 
 const VideoBackground = () => {
   return (
-    <div className="relative h-screen w-full overflow-hidden">
+    <div className="relative h-full w-full overflow-hidden">
       {/* Video Background */}
       <video
         className="absolute left-0 top-0 h-full w-full object-cover"
@@ -27,7 +27,7 @@ const VideoBackground = () => {
           zIndex: 1, // Ensure this overlay is above the video
         }}
       ></div>
-      <div className=" relative top-96 z-10 mx-[10%] h-full w-full text-left">
+      <div className=" relative top-96 z-10 mx-[10%] mb-[33%] h-full w-full text-left">
         <Landing></Landing>
       </div>
     </div>
