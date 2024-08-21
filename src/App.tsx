@@ -12,6 +12,8 @@ import Howitworks from "./components/HowItWorks";
 import Blob from "./components/Blob";
 import CursorFollower from "./components/CursorFollower";
 import Testimonials from "./components/Testimonials";
+import Contact_Section from "./components/ContactUs";
+import Pricing from "./components/Pricing";
 
 function Tab1() {
   return (
@@ -116,7 +118,12 @@ function App() {
           <Howitworks></Howitworks>
         </div>
         <div className=" h-fit bg-[#080808]">
+          <div className="sticky top-0">
+            <CursorFollower />
+          </div>
           <Testimonials />
+          <Pricing></Pricing>
+          <Contact_Section />
         </div>
       </div>
     </div>

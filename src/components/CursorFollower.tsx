@@ -16,7 +16,7 @@ const CursorFollower: React.FC = () => {
   }, []);
 
   return (
-    <div className="sticky top-96 h-0 w-full bg-blue-50">
+    <div className="sticky top-96 hidden h-0 w-full bg-blue-50 md:visible md:block">
       <div
         className="pointer-events-none absolute left-0 top-0 h-[60em] w-[60em] rounded-full transition-transform duration-100 ease-out"
         style={{

@@ -25,7 +25,7 @@ const testimonials: ITestimonial[] = [
 
 const Testimonials: React.FC<IAppProps> = () => {
   return (
-    <div className="relative z-50 p-[12%]">
+    <div className="relative z-50 p-[12%] pb-36">
       <div className="sectiontitle">Testimonials </div>
       <div className="subheading-nocolor pb-[2em] pt-8 text-gray-400">
         No new work. We'll get you live within 30 days. Easy installation, 100%
