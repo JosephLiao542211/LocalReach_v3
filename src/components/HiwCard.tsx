@@ -50,13 +50,11 @@ function Item({ cardnum, priority }: { cardnum: number; priority: number }) {
 
 function HiwCard({ priority }: { priority: number }) {
   return (
-    <div className="relative">
-      <div className=" absolute left-1/2 top-1/2 w-full -translate-x-1/2 -translate-y-1/2 transform">
-        <Item cardnum={0} priority={priority}></Item>
-        <Item cardnum={1} priority={priority}></Item>
-        <Item cardnum={2} priority={priority}></Item>
-        <Item cardnum={3} priority={priority}></Item>
-      </div>
+    <div className=" relative left-1/2 top-1/2 w-full -translate-x-1/2 -translate-y-1/2 transform">
+      <Item cardnum={0} priority={priority}></Item>
+      <Item cardnum={1} priority={priority}></Item>
+      <Item cardnum={2} priority={priority}></Item>
+      <Item cardnum={3} priority={priority}></Item>
     </div>
   );
 }

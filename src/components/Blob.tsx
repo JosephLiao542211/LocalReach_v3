@@ -44,7 +44,7 @@ const Blob = ({
           width: size,
 
           filter: "blur(160px)", // Adjust blur radius as needed
-          opacity: "50%",
+          opacity: "20%",
           background: color, // Use the color prop
           transition: "15s",
         }}

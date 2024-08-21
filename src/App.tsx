@@ -9,13 +9,19 @@ import Navbar from "./components/NavBar";
 import VideoBackground from "./components/VideoBackgroundLanding";
 import Tabs from "./components/Tabs";
 import Howitworks from "./components/HowItWorks";
+import Blob from "./components/Blob";
+import CursorFollower from "./components/CursorFollower";
+import Testimonials from "./components/Testimonials";
+
 function Tab1() {
   return (
     <div className="mx-[10%]  flex h-full flex-col space-y-4 text-left lg:flex-row lg:space-x-4 lg:space-y-0">
       {/* Left Column */}
-      <div className=" flex-1 rounded-lg bg-gray-100 p-6 shadow-md">
-        <h2 className="mb-4 text-2xl font-bold">Heading for Tab 1</h2>
-        <p className="text-gray-700">
+      <div className=" mr-[5%] flex-1 rounded-lg ">
+        <h2 className="sectiontitle pb-8 text-2xl font-bold">
+          Heading for Tab 1
+        </h2>
+        <p className="subheading">
           This is the text content for Tab 1. It can be as long as needed, and
           will be displayed in a nice, readable format.
         </p>
@@ -44,14 +50,22 @@ function Tab1() {
 
 function Tab2() {
   return (
-    <div className="mx-[10%] flex  h-full flex-col space-y-4 text-left lg:flex-row lg:space-x-4 lg:space-y-0">
+    <div className="mx-[10%] flex  h-full flex-col space-y-4 text-left lg:flex-row lg:space-x-12 lg:space-y-0">
       {/* Left Column */}
-      <div className=" flex-1 rounded-lg bg-gray-100 p-6 shadow-md">
-        <h2 className="mb-4 text-2xl font-bold">Heading for Tab 1</h2>
-        <p className="text-gray-700">
+      <div className=" mr-[20%] flex-1 rounded-lg ">
+        <h2 className="sectiontitle pb-8 text-2xl font-bold">
+          Heading for Tab 1
+        </h2>
+        <p className="subheading">
           This is the text content for Tab 1. It can be as long as needed, and
           will be displayed in a nice, readable format.
         </p>
+      </div>
+      <div className="relative flex-1 bg-green-500">
+        <div className="absolute -bottom-[5%] -left-5 hidden h-[100px] w-[300px] bg-orange-400 md:block"></div>
+      </div>
+      <div className="relative flex-1 bg-green-500">
+        <div className="absolute -left-5 -top-[5%] hidden h-[100px] w-[300px] bg-blue-300 md:block"></div>
       </div>
     </div>
   );
@@ -75,7 +89,7 @@ function App() {
       content: <Tab1></Tab1>,
     },
     {
-      label: "Tab 2",
+      label: "For Resturants",
       content: <Tab2></Tab2>,
     },
   ];
@@ -84,10 +98,27 @@ function App() {
     <div className="text-center">
       <VideoBackground />
       <Navbar></Navbar>
-      <div className="w-full ">
+      <div className="relative w-full ">
         <Tabs tabs={tabData} />
       </div>
-      <Howitworks></Howitworks>
+      <div className="contain-paint">
+        <div className="relative z-20 h-[300em] bg-[#080808]">
+          <div className="sticky top-0">
+            <CursorFollower />
+            <Blob color="#95D0FD" startingPosition={{ x: 0, y: 200 }} />
+          </div>
+
+          <div className="absolute top-0 h-max w-full">
+            <Blob />
+            <Blob color="#95D0FD" startingPosition={{ x: 500, y: 2000 }} />
+            <Blob startingPosition={{ x: 1000, y: 4000 }} />
+          </div>
+          <Howitworks></Howitworks>
+        </div>
+        <div className=" h-fit bg-[#080808]">
+          <Testimonials />
+        </div>
+      </div>
     </div>
   );
 }

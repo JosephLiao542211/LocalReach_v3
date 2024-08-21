@@ -29,33 +29,32 @@ const Gt: React.FC<GtProps> = ({ refProp }) => {
   });
 
   return (
-    <div>
-      <div className="grid grid-cols-2 py-4">
-        <HiwCard priority={slide}></HiwCard>
-
-        <div>
-          <motion.div
-            className="progress-bar"
-            style={{ scaleX: scrollYProgress }}
-          />
-          <div className="flex items-center justify-center">
-            <div className="relative h-[305px] w-[510px]">
-              <div className="relative left-px top-px h-[327px] w-[508px]">
-                <div className="absolute left-[105px] top-[281px] h-[46px] w-[298px] rounded-[149px/23px] bg-[#1e1e1e] opacity-50 mix-blend-multiply blur-[48.1px]" />
-                <img
-                  className="absolute left-[153px] top-[292px] h-[12px] w-[202px]"
-                  alt="Base"
-                  src="base.svg"
-                />
-                <div className="absolute left-[169px] top-[294px] h-[3px] w-[171px] rounded-[85.26px/1.55px] bg-[#1e1e1e] mix-blend-multiply blur-[6.57px]" />
-                <div className="absolute left-[184px] top-[292px] h-[3px] w-[140px] [background:linear-gradient(180deg,rgb(34,34,34)_0%,rgb(23.38,23.18,23.18)_100%)]" />
-                <div className="absolute left-0 top-0 h-[292px] w-[508px] rounded-[14px] [background:linear-gradient(180deg,rgb(41.21,41.21,41.21)_0%,rgb(34.41,34.41,34.41)_100%)]" />
-                <img
-                  className="absolute left-[6px] top-[6px] h-[280px] w-[496px]"
-                  alt="Mask group"
-                  src="mask-group.png"
-                />
-              </div>
+    <div className="flex h-fit md:flex-row">
+      <div className="flex flex-1 justify-center">
+        <HiwCard priority={slide} />
+      </div>
+      <div className="mt-4 md:ml-4 md:mt-0">
+        <motion.div
+          className="progress-bar"
+          style={{ scaleX: scrollYProgress }}
+        />
+        <div className="hidden flex-1 items-center justify-center p-4 md:flex md:p-10">
+          <div className="relative h-[305px] w-full md:w-[510px]">
+            <div className="relative h-[307px] w-[1em] md:w-[508px]">
+              <div className="absolute left-[20%] top-[90%] h-[46px] w-[1em] rounded-[149px/23px] bg-[#1e1e1e] opacity-50 mix-blend-multiply blur-[48.1px]" />
+              <img
+                className="absolute left-[30%] top-[95%] h-[12px] w-[40%]"
+                alt="Base"
+                src="base.svg"
+              />
+              <div className="absolute left-[33%] top-[95%] h-[3px] w-[35%] rounded-[85.26px/1.55px] bg-[#1e1e1e] mix-blend-multiply blur-[6.57px]" />
+              <div className="absolute left-[36%] top-[95%] h-[3px] w-[30%] [background:linear-gradient(180deg,rgb(34,34,34)_0%,rgb(23.38,23.18,23.18)_100%)]" />
+              <div className="absolute left-0 top-0 h-[292px] w-full rounded-[14px] [background:linear-gradient(180deg,rgb(41.21,41.21,41.21)_0%,rgb(34.41,34.41,34.41)_100%)]" />
+              <img
+                className="absolute left-[6px] top-[6px] h-[280px] w-[calc(100%-12px)]"
+                alt="Mask group"
+                src="mask-group.png"
+              />
             </div>
           </div>
         </div>
