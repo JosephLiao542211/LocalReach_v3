@@ -17,7 +17,7 @@ import Pricing from "./components/Pricing";
 
 function Tab1() {
   return (
-    <div className="mx-[10%]  flex h-full flex-col space-y-4 text-left lg:flex-row lg:space-x-4 lg:space-y-0">
+    <div className="mx-[15%]  flex h-full flex-col space-y-4 text-left lg:flex-row lg:space-x-4 lg:space-y-0">
       {/* Left Column */}
       <div className=" mr-[5%] flex-1 rounded-lg ">
         <h2 className="sectiontitle pb-8 text-2xl font-bold">
@@ -52,7 +52,7 @@ function Tab1() {
 
 function Tab2() {
   return (
-    <div className="mx-[10%] flex  h-full flex-col space-y-4 text-left lg:flex-row lg:space-x-12 lg:space-y-0">
+    <div className="mx-[15%] flex  h-full flex-col space-y-4 text-left lg:flex-row lg:space-x-12 lg:space-y-0">
       {/* Left Column */}
       <div className=" mr-[20%] flex-1 rounded-lg ">
         <h2 className="sectiontitle pb-8 text-2xl font-bold">
