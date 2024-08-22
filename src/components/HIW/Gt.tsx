@@ -2,7 +2,7 @@ import { motion, useScroll } from "framer-motion";
 
 import { useEffect, useRef, useState } from "react";
 import { useMotionValueEvent } from "framer-motion";
-import HiwCard from "../HiwCard";
+import HiwCard from "./HiwCard";
 interface GtProps {
   refProp: React.RefObject<HTMLDivElement>;
 }

@@ -27,9 +27,7 @@ const VideoBackground = () => {
           zIndex: 1, // Ensure this overlay is above the video
         }}
       ></div>
-      <div className=" relative top-96 z-10 mx-[10%] h-full w-full pb-[33%] text-left">
-        <Landing></Landing>
-      </div>
+      <Landing></Landing>
     </div>
   );
 };

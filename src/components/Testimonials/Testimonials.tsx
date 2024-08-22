@@ -1,5 +1,5 @@
 import * as React from "react";
-import In_Depth from "../In_Depth";
+import In_Depth from "./In_Depth";
 
 export interface ITestimonial {
   quote: string;
