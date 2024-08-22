@@ -3,7 +3,7 @@ import * as React from "react";
 export function Landing() {
   return (
     <div className="relative">
-      <div className="absolute -top-[187px] z-0 h-[20em] w-[33em] bg-orange-400"></div>
+      <div className="absolute -top-[187px] z-0 h-[20em] w-[34em] bg-orange-400"></div>
       <div className="relative z-10 w-full">
         <div className="title-font text-left text-4xl font-bold">
           Unlock your <br />

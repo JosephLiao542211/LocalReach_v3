@@ -1,8 +1,8 @@
 import { useRef } from "react";
 
 import Gt from "./Gt";
-import Blob from "./Blob";
-import CursorFollower from "./CursorFollower";
+import Blob from "../Global/Blob";
+import CursorFollower from "../Global/CursorFollower";
 
 const Howitworks = () => {
   const ref = useRef<HTMLDivElement>(null);

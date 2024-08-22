@@ -5,15 +5,15 @@ import { useState } from "react";
 // import Pin from "./components/Pin";
 // import Typewriter from "./components/Typewriter";
 
-import Navbar from "./components/NavBar";
-import VideoBackground from "./components/VideoBackgroundLanding";
-import Tabs from "./components/Tabs";
-import Howitworks from "./components/HowItWorks";
-import Blob from "./components/Blob";
-import CursorFollower from "./components/CursorFollower";
-import Testimonials from "./components/Testimonials";
-import Contact_Section from "./components/ContactUs";
-import Pricing from "./components/Pricing";
+import Navbar from "./components/Navbar/NavBar";
+import VideoBackground from "./components/Landing/VideoBackgroundLanding";
+import Tabs from "./components/AR/Tabs";
+import Howitworks from "./components/HIW/HowItWorks";
+import Blob from "./components/Global/Blob";
+import CursorFollower from "./components/Global/CursorFollower";
+import Testimonials from "./components/Testimonials/Testimonials";
+import Contact_Section from "./components/Contact/ContactUs";
+import Pricing from "./components/Pricing/Pricing";
 
 function Tab1() {
   return (
