@@ -91,7 +91,7 @@ function App() {
       content: <Tab1></Tab1>,
     },
     {
-      label: "For Resturants",
+      label: "For Restaurants",
       content: <Tab2></Tab2>,
     },
   ];
